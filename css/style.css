@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 400px;
+    height: 600px;
+    box-shadow: 0px 0px 4px;
+    /* border: 1px solid rgb(209, 209, 209); */
+    border-radius: 12px;
+    /* box-shadow: 30px; */
+    opacity: 30px;
+    margin: 20%;
+    padding: 20px;
+    text-align: center;
+}
+
+.container>h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.container>p{
+    font-size: 14px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    font-weight: 20px;
+    
+}
+
+.name{
+    margin-top: 14px;
+    text-align: left;
+}
+
+.name>input{
+    padding: 9px;
+    border-radius: 5px; 
+    border: 1px solid grey;
+}
+
+.dob{
+    margin-top: 14px;
+    text-align: left;
+}
+
+.dob>span>i{
+    margin-bottom: 6px;
+}
+
+.dob>select{
+    margin-right: 4px;
+    padding: 9px;
+    width: 31%;
+    border-radius: 5px; 
+    border-color: rgb(128, 128, 128);
+}
+
+ .gender{
+    position: relative;
+    margin-top: 14px;
+    text-align: left;
+ }
+   
+ .gender>span>i{
+    margin-bottom: 6px;
+}
+
+.gender input{
+    width: 30%;
+    margin-left: 16px;
+}
+
+.female{
+    width: 25%;
+    border: 1px solid  rgb(128, 128, 128);
+    border-radius: 5px;
+    text-align: left;
+    padding: 9px;
+    position: absolute;
+    right: 37%;
+}
+
+.male{
+    width: 26%;
+    border: 1px solid  rgb(128, 128, 128);
+    border-radius: 5px;
+    text-align: left;
+    padding: 9px;
+}
+
+.custom{
+    width: 25%;
+    border: 1px solid  rgb(128, 128, 128);
+    border-radius: 5px;
+    text-align: left;
+    padding: 9px;
+    position: absolute;
+    right: 3%;
+    top: 36%;
+}
+
+.contact{
+    margin-top: 14px;
+    text-align: left;
+}
+
+.contact>input{
+    margin-bottom: 10px;
+    padding: 9px;
+    width: 91%;
+}
+
+.details{
+    text-align: left;
+    font-size: 13px;
+    font-weight: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(34, 34, 34);
+    margin-bottom: 20px;
+}
+
+.details a{
+    text-decoration: none;
+}
+
+.sign{
+    padding: 9px;
+}
+
+.sign>input{
+    margin-bottom: 20px;
+    padding: 6px;
+    width: 33%;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(61, 182, 61);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.sign>h3>a{
+    font-size: 13px;
+    font-weight: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}

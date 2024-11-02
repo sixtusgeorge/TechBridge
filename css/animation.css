@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ani{
+    padding: 5%;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    animation-name: example;
+    animation-duration: 2s;
+    /* translate: 100px 100px;  */
+    /* transition-duration: 2s; */
+    /* transform: rotate(30deg) translate(200px); */
+    /* transition: all 1s ease-in;  */
+    animation-iteration-count: infinite;
+}
+
+/* code for animation */
+
+@keyframes example{
+    0%{
+        transform: scale(0.4);
+    }
+
+    50%{
+        transform: scale(2);
+        background-color: aquamarine;
+    }
+
+    100%{
+        transform: scale(2);
+        transform: rotate(30deg);
+    }
+}
+
+/* code for responsiveness */
+
+@media screen and (max-width:414px) and (max-height:896px) {
+    .ani{
+        height: 300px;
+        width: 250px;
+    }
+}

@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Styling for flex */
+
+.mContainer{
+    padding: 12.5%;
+    display: flex; 
+    gap: 35px;
+    justify-content: center;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.fContainer{
+    height: 200px;
+    width: 500px;
+    padding: 40px;
+    text-align: left;
+}
+
+.fContainer>h1{
+    color: rgb(81, 81, 255);
+    font-size: 60px;
+}
+
+.fContainer p{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(28, 30, 33);
+}
+
+.sContainer{
+    height: 400px;
+    width: 400px;
+    /* border: 1px solid grey; */
+}
+
+.form{
+    height: 325px;
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px rgb(170, 170, 170);
+    background-color: white;
+    padding: 17px;
+}
+
+.email>input{
+    font-size: 17px;
+    font-family: helvetica;
+    font-weight: 400px;
+    color: rgb(216, 215, 215);
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 99.5%;
+    border: 1px solid rgb(216, 215, 215);
+    border-radius: 7px;
+    outline: none;
+}
+
+.login>input{
+    margin-bottom: 15px;
+    width: 99%;
+    background-color: rgb(81, 81, 255);
+    border: none;
+    border-radius: 6px;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700px;
+    line-height: 48px;
+}
+
+.login>p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login p>a{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500px;
+    line-height: 19px;
+    color: rgb(8, 102, 255);
+    text-decoration: none;
+}
+
+.recreate{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.recreate>input{
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(9, 184, 9);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700px;  
+}
+
+.celebrity{
+    margin-top: 20px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    color: rgb(82, 82, 82);
+}
+
+.celebrity p>a{
+    text-decoration: none;
+    color: black;
+}
+
+
