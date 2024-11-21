@@ -60,3 +60,9 @@ nav{
     background-color: white;
     height: 15%;
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+}
