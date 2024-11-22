@@ -4,46 +4,63 @@
     box-sizing: border-box;
 }
 
-body{
+.main{
     height: 100vh;
-    margin: 8%;
-    text-align: center;
+    background-color: #F0F2F5;
 }
 
-.container{
-    width: 400px;
-    height: 690px;
-    box-shadow: 0px 0px 4px;
-    /* border: 1px solid rgb(209, 209, 209); */
-    border-radius: 12px;
-    /* box-shadow: 30px; */
+ h1{
+    text-align: center; 
+    font-size: 60px; 
+    font-family: helvetica;
+    color: #0866FF;
+    padding: 16px;
+}
+
+.form{
+    height: 650px;
+    width: 28%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px rgb(170, 170, 170);
+    background-color: white;
     padding: 20px;
+    margin: 2px 35% 0%
+}
+
+.fcontainer{
+    padding: 8px;
     text-align: center;
 }
 
-.container>h2{
-    font-size: 30px;
-    text-align: center;
+.fcontainer>h2{
+    color: #1C1E21;
+    font-size: 25px;
+    font-family: helvetica;
+    font-weight: 600;
 }
 
-.container>p{
+.fcontainer>p{
     font-size: 14px;
-    color: gray;
+    color: #8D94AA;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
+    margin: 9px 2px;
     font-weight: 20px;
     
 }
 
 .name{
+    display: flex;
+    gap: 13px;
+    justify-content: center;
     margin-top: 14px;
-    text-align: left;
+    text-align: left; 
 }
 
 .name>input{
-    padding: 9px;
+    padding: 12px;
     border-radius: 5px; 
-    border: 1px solid grey;
+    border: 1px solid #EFF0F2;
+    color: #8D94AA;
 }
 
 .dob{
@@ -52,53 +69,66 @@ body{
 }
 
 .dob>span>i{
-    margin-bottom: 6px;
+    margin-bottom: 7px;
+}
+
+.dob span{
+    color: #606770;
 }
 
 .dob>select{
-    margin-right: 4px;
-    padding: 9px;
-    width: 31%;
+    margin-right: 8.3px;
+    padding: 15px;
+    width: 125px;
     border-radius: 5px; 
-    border-color: rgb(128, 128, 128);
+    border: 1px solid #EFF0F2;
 }
 
  .gender{
     position: relative;
     margin-top: 14px;
     text-align: left;
+    color: #8D94AA;
  }
    
- .gender>span>i{
-    margin-bottom: 6px;
+ .gender>span{
+    color: #606770;
 }
 
-.gender input{
-    width: 30%;
-    margin-left: 16px;
+.gender>span>i{
+    margin-bottom:7px;
 }
 
 .female{
-    width: 25%;
-    border: 1px solid  rgb(128, 128, 128);
+    width: 120px;
+    border: 1px solid #EFF0F2;
     border-radius: 5px;
     text-align: left;
     padding: 9px;
     position: absolute;
-    right: 37%;
+    right: 36%;
 }
 
+.female input[type = radio]{
+    margin-left: 35px;
+}
+
+
 .male{
-    width: 26%;
-    border: 1px solid  rgb(128, 128, 128);
+    width: 120px;
+    border: 1px solid #EFF0F2;
     border-radius: 5px;
     text-align: left;
     padding: 9px;
 }
 
+.male input[type = radio]{
+    margin-left: 50px;
+}
+
 .custom{
-    width: 25%;
-    border: 1px solid  rgb(128, 128, 128);
+    width: 120px;
+    border: 1px solid #EFF0F2;
     border-radius: 5px;
     text-align: left;
     padding: 9px;
@@ -107,23 +137,31 @@ body{
     top: 36%;
 }
 
+.custom input[type = radio]{
+    margin-left: 30px;
+}
+
 .contact{
-    margin-top: 14px;
+    margin-top: 15px;
+    margin-bottom: 9px;
     text-align: left;
 }
 
 .contact>input{
     margin-bottom: 10px;
-    padding: 9px;
-    width: 91%;
+    padding: 13px;
+    width: 97%;
+    color: #8D94AA;
+    border: 1px solid #EFF0F2;
+    border-radius: 5px;
 }
 
 .details{
     text-align: left;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 400px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(34, 34, 34);
+    color: #525355;
     margin-bottom: 20px;
 }
 
@@ -137,8 +175,8 @@ body{
 
 .sign>input{
     margin-bottom: 20px;
-    padding: 6px;
-    width: 33%;
+    padding: 13px;
+    width: 45%;
     font-size: 12px;
     color: white;
     background-color: rgb(61, 182, 61);
@@ -147,9 +185,18 @@ body{
     border: none;
 }
 
+.sign input[type = button]{
+    margin-left: 110px;
+}
+
 .sign>h3>a{
+    /* margin-left: 80px;   */
     font-size: 13px;
     font-weight: 400px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+}
+
+.sign h3{
+    text-align: center;
 }
