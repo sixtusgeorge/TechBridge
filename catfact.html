@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Cat Fact</title>
+</head>
+<body>
+
+  <h1>Random Cat Fact</h1>
+  <button id="getFactBtn">Get a Cat Fact</button>
+  <p id="catFact"></p>
+
+  <script>
+    // Function to fetch a random cat fact
+    function getCatFact() {
+      fetch('https://catfact.ninja/fact') // Make an API request to get a cat fact
+        .then(response => response.json()) // Parse the JSON response
+        .then(data => {
+          // Display the cat fact in the paragraph element
+          document.getElementById('catFact').textContent = data.fact;
+        })
+        .catch(error => {
+          console.error('Error fetching cat fact:', error);
+        });
+    }
+
+    // Add event listener to the button to trigger fetching a cat fact
+    document.getElementById('getFactBtn').addEventListener('click', getCatFact);
+  </script>
+
+</body>
+</html>
