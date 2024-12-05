@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="/css/rock.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="choices">
+            <button class="choice" id="rock">Rock</button>
+            <button class="choice" id="paper">Paper</button>
+            <button class="choice" id="scissors">Scissors</button>
+        </div>
+        <div class="result">
+            <h2>Result: <span id="result-text">Choose your move!</span></h2>
+            <p>Computer's Choice: <span id="computer-choice">-</span></p>
+        </div>
+        <div class="score">
+            <p>Player Score: <span id="player-score">0</span></p>
+            <p>Computer Score: <span id="computer-score">0</span></p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize scores
+let playerScore = 0;
+let computerScore = 0;
+
+// Possible choices
+const choices = ['rock', 'paper', 'scissors'];
+
+// DOM elements
+const resultText = document.getElementById('result-text');
+const computerChoiceText = document.getElementById('computer-choice');
+const playerScoreText = document.getElementById('player-score');
+const computerScoreText = document.getElementById('computer-score');
+
+// Function to get the computer's choice
+function getComputerChoice() {
+    const randomChoice = choices[Math.floor(Math.random() * choices.length)];
+    return randomChoice;
+}
+
+// Function to determine the winner
+function determineWinner(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+        return 'It\'s a tie!';
+    }
+    if (
+        (playerChoice === 'rock' && computerChoice === 'scissors') ||
+        (playerChoice === 'paper' && computerChoice === 'rock') ||
+        (playerChoice === 'scissors' && computerChoice === 'paper')
+    ) {
+        playerScore++;
+        playerScoreText.textContent = playerScore;
+        return 'You win!';
+    } else {
+        computerScore++;
+        computerScoreText.textContent = computerScore;
+        return 'Computer wins!';
+    }
+}
+
+// Event listeners for the player's choice
+document.getElementById('rock').addEventListener('click', () => playGame('rock'));
+document.getElementById('paper').addEventListener('click', () => playGame('paper'));
+document.getElementById('scissors').addEventListener('click', () => playGame('scissors'));
+
+// Function to play the game
+function playGame(playerChoice) {
+    const computerChoice = getComputerChoice();
+    const winner = determineWinner(playerChoice, computerChoice);
+
+    // Update the UI with the choices and the result
+    computerChoiceText.textContent = computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1);
+    resultText.textContent = winner;
+}
+
+    </script>
+</body>
+</html>

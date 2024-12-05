@@ -15,7 +15,7 @@ getFacts
 .then(result=>console.log(result))
 .catch(error=> console.log(error))
 
-
+  
 // const people = [
 //     {
 //       name: "John Doe",
